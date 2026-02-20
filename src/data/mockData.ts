@@ -1,0 +1,65 @@
+export interface MarketItem {
+    id: number;
+    title: string;
+    breed: string;
+    type: string;
+    category: string;
+    weight: string;
+    location: string;
+    price: number;
+    currency: string;
+    heads: number;
+    age: string;
+    condition: string;
+    verified: boolean;
+    img: string;
+}
+
+export const MARKET_DATA: MarketItem[] = [
+    { id: 101, title: "40 Becerros", breed: "Brahman", type: "macho", category: "Becerros", weight: "180 Kg", location: "Anzoátegui", price: 0, currency: "VES", heads: 40, age: "Desconocido", condition: "Desconocido", verified: true, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 102, title: "35 Mautes", breed: "Angus", type: "macho", category: "Mautes", weight: "280 Kg", location: "Portuguesa", price: 0, currency: "VES", heads: 35, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 103, title: "15 Toros Reproductores", breed: "Guzerat", type: "macho", category: "Toros para padre", weight: "750 Kg", location: "Zulia", price: 0, currency: "VES", heads: 15, age: "Desconocido", condition: "Desconocido", verified: true, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 104, title: "50 Becerros", breed: "Brahman", type: "macho", category: "Becerros", weight: "195 Kg", location: "Cojedes", price: 0, currency: "VES", heads: 50, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 105, title: "25 Mautes", breed: "Senepol", type: "macho", category: "Mautes", weight: "310 Kg", location: "Bolívar", price: 0, currency: "VES", heads: 25, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 106, title: "12 Toros", breed: "Carora", type: "macho", category: "Toros", weight: "680 Kg", location: "Lara", price: 0, currency: "VES", heads: 12, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 107, title: "60 Becerros", breed: "Nelore", type: "macho", category: "Becerros", weight: "170 Kg", location: "Miranda", price: 0, currency: "VES", heads: 60, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 108, title: "30 Mautes", breed: "F1", type: "macho", category: "Mautes", weight: "290 Kg", location: "Táchira", price: 0, currency: "VES", heads: 30, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 109, title: "45 Becerros", breed: "Brahman", type: "macho", category: "Becerros", weight: "205 Kg", location: "Carabobo", price: 0, currency: "VES", heads: 45, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 110, title: "20 Novillos", breed: "Brangus", type: "macho", category: "Novillos", weight: "410 Kg", location: "Mérida", price: 0, currency: "VES", heads: 20, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+
+    // === HEMBRAS (Novillas y Vacas) ===
+    { id: 201, title: "55 Novillas", breed: "Brahman", type: "hembra", category: "Novillas", weight: "160 Kg", location: "Anzoátegui", price: 0, currency: "VES", heads: 55, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 202, title: "40 Novillas", breed: "Carora", type: "hembra", category: "Novillas", weight: "320 Kg", location: "Lara", price: 0, currency: "VES", heads: 40, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 203, title: "30 Vacas", breed: "F1", type: "hembra", category: "Vacas", weight: "380 Kg", location: "Portuguesa", price: 0, currency: "VES", heads: 30, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 204, title: "25 Novillas Preñadas", breed: "Brahman", type: "hembra", category: "Novillas Preñadas", weight: "420 Kg", location: "Zulia", price: 0, currency: "VES", heads: 25, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 205, title: "50 Novillas", breed: "Jersey", type: "hembra", category: "Novillas", weight: "155 Kg", location: "Mérida", price: 0, currency: "VES", heads: 50, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 206, title: "35 Vacas Preñadas", breed: "Pardo Suizo", type: "hembra", category: "Vacas Preñadas", weight: "490 Kg", location: "Táchira", price: 0, currency: "VES", heads: 35, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 207, title: "45 Novillas", breed: "Nelore", type: "hembra", category: "Novillas", weight: "165 Kg", location: "Miranda", price: 0, currency: "VES", heads: 45, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 208, title: "20 Novillas", breed: "Gir", type: "hembra", category: "Novillas", weight: "300 Kg", location: "Cojedes", price: 0, currency: "VES", heads: 20, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 209, title: "60 Vacas", breed: "Brahman", type: "hembra", category: "Vacas", weight: "360 Kg", location: "Bolívar", price: 0, currency: "VES", heads: 60, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 210, title: "30 Vacas Preñadas", breed: "Holstein", type: "hembra", category: "Vacas Preñadas", weight: "510 Kg", location: "Carabobo", price: 0, currency: "VES", heads: 30, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+
+    // === CRÍA (Vacas con Cría y Proyectos de Cría) ===
+    { id: 301, title: "40 Vacas con Cría", breed: "Brahman", type: "cria", category: "Vacas Preñadas", weight: "440 Kg", location: "Portuguesa", price: 0, currency: "VES", heads: 40, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 302, title: "25 Vacas con Cría", breed: "Carora", type: "cria", category: "Vacas Preñadas", weight: "460 Kg", location: "Lara", price: 0, currency: "VES", heads: 25, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 303, title: "50 Vacas con Cría", breed: "F1", type: "cria", category: "Vacas Preñadas", weight: "410 Kg", location: "Zulia", price: 0, currency: "VES", heads: 50, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 304, title: "30 Vacas con Cría", breed: "Senepol", type: "cria", category: "Vacas Preñadas", weight: "430 Kg", location: "Anzoátegui", price: 0, currency: "VES", heads: 30, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 305, title: "15 Vacas con Cría", breed: "Pardo Suizo", type: "cria", category: "Vacas Preñadas", weight: "480 Kg", location: "Mérida", price: 0, currency: "VES", heads: 15, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 306, title: "60 Vacas con Cría", breed: "Brahman", type: "cria", category: "Vacas Preñadas", weight: "425 Kg", location: "Cojedes", price: 0, currency: "VES", heads: 60, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 307, title: "45 Vacas con Cría", breed: "Guzerat", type: "cria", category: "Vacas Preñadas", weight: "450 Kg", location: "Bolívar", price: 0, currency: "VES", heads: 45, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 308, title: "20 Vacas con Cría", breed: "Jersey", type: "cria", category: "Vacas Preñadas", weight: "390 Kg", location: "Miranda", price: 0, currency: "VES", heads: 20, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 309, title: "35 Vacas con Cría", breed: "F1", type: "cria", category: "Vacas Preñadas", weight: "400 Kg", location: "Zulia", price: 0, currency: "VES", heads: 35, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 310, title: "40 Vacas con Cría", breed: "Angus", type: "cria", category: "Vacas Preñadas", weight: "435 Kg", location: "Táchira", price: 0, currency: "VES", heads: 40, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+
+    // === LOTS PARA CEBA (Categoría Variada) ===
+    { id: 401, title: "80 Becerros Destetados", breed: "Nelore", type: "macho", category: "Becerros", weight: "160 Kg", location: "Anzoátegui", price: 0, currency: "VES", heads: 80, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 402, title: "45 Novillas de Levante", breed: "Brahman", type: "hembra", category: "Novillas", weight: "280 Kg", location: "Portuguesa", price: 0, currency: "VES", heads: 45, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 403, title: "25 Mautes Jóvenes", breed: "Gir", type: "macho", category: "Mautes", weight: "220 Kg", location: "Carabobo", price: 0, currency: "VES", heads: 25, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 404, title: "60 Vacas", breed: "F1", type: "hembra", category: "Vacas", weight: "340 Kg", location: "Cojedes", price: 0, currency: "VES", heads: 60, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 405, title: "30 Novillas Preñadas", breed: "Carora", type: "hembra", category: "Novillas Preñadas", weight: "390 Kg", location: "Lara", price: 0, currency: "VES", heads: 30, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 406, title: "100 Novillas", breed: "Brahman", type: "hembra", category: "Novillas", weight: "150 Kg", location: "Bolívar", price: 0, currency: "VES", heads: 100, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+    { id: 407, title: "20 Toros Reproductores", breed: "Brahman", type: "macho", category: "Toros para padre", weight: "820 Kg", location: "Zulia", price: 0, currency: "VES", heads: 20, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 408, title: "55 Mautes Levante", breed: "Senepol", type: "macho", category: "Mautes", weight: "240 Kg", location: "Miranda", price: 0, currency: "VES", heads: 55, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600" },
+    { id: 409, title: "40 Vacas Preñadas", breed: "Pardo Suizo", type: "hembra", category: "Vacas Preñadas", weight: "475 Kg", location: "Táchira", price: 0, currency: "VES", heads: 40, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?w=600" },
+    { id: 410, title: "70 Becerros", breed: "Brahman", type: "macho", category: "Becerros", weight: "185 Kg", location: "Portuguesa", price: 0, currency: "VES", heads: 70, age: "Desconocido", condition: "Desconocido", verified: false, img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600" },
+];

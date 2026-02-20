@@ -1,0 +1,1 @@
+export const BCV_RATE = 365.42;
